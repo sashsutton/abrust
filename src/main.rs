@@ -23,7 +23,7 @@ fn main() -> Result<(), hound::Error> {
         sample_format: hound::SampleFormat::Float,
     };
 
-    let mut writer = hound::WavWrittter::create("sine.wav", spec)?;
+    let mut writer = hound::WavWriter::create("sine.wav", spec)?;
 
     for s in &samples {
         writer.write_sample(*s)?;
