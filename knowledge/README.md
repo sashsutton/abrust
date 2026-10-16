@@ -5,6 +5,7 @@ before acting; update it after.
 
 | File | What it holds | Update when |
 |------|---------------|-------------|
+| `NEXT_SESSION.md` | **Start here.** Explicit to-do list and recap for the next coding session | End of every session (rewrite it) |
 | `PLAN.md` | Phased roadmap; first unchecked box = current step | A step is done or the plan changes |
 | `LOG.md` | Session-by-session journal | End of every session |
 | `LEARNER.md` | User's background and Rust concept progress | A concept is introduced or mastered |
@@ -14,4 +15,4 @@ before acting; update it after.
 | `GLOSSARY.md` | Audio and Rust terms | A new term comes up |
 | `RESOURCES.md` | Learning links and reference projects | A useful source is found |
 
-Start of a session: `LOG.md` (last entry) → `PLAN.md` (current step) → `LEARNER.md`.
+Start of a session: `NEXT_SESSION.md` → `LOG.md` (last entry) → `PLAN.md` (current step) → `LEARNER.md`.

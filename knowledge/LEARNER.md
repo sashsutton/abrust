@@ -14,24 +14,24 @@ Update after every session.
 `[ ]` not seen · `[~]` seen, still shaky · `[x]` comfortable
 
 ### Fundamentals
-- [ ] cargo: new / run / check / test / clippy / fmt
-- [ ] variables, mutability, shadowing
-- [ ] primitive types, casting (`as`)
-- [ ] functions, expressions vs statements
-- [ ] control flow: `if`, `loop`, `while`, `for`, ranges
-- [ ] `Vec`, slices, arrays
+- [~] cargo: new / run / check / test / clippy / fmt (run/check/add used; test/clippy/fmt not yet)
+- [~] variables, mutability, shadowing
+- [~] primitive types, casting (`as`)
+- [~] functions, expressions vs statements
+- [~] control flow: `if`, `loop`, `while`, `for`, ranges
+- [~] `Vec`, slices, arrays
 - [ ] `String` vs `&str`
 
 ### Ownership
-- [ ] move semantics
-- [ ] borrowing: `&` and `&mut`
+- [~] move semantics
+- [~] borrowing: `&` and `&mut` (asked "why `&samples`?", a good sign)
 - [ ] the borrow checker's rules
 - [ ] lifetimes
 
 ### Types and abstraction
 - [ ] structs, `impl`, methods
-- [ ] enums, `match`, `Option`, `Result`
-- [ ] error handling with `?`
+- [ ] enums, `match`, `Option`, `Result` (`Result` used in `main`)
+- [~] error handling with `?`
 - [ ] traits, `impl Trait`, `dyn Trait`
 - [ ] generics
 - [ ] iterators and closures

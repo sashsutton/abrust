@@ -14,10 +14,10 @@ steps complete, and log the session in `LOG.md`.
 ## Phase 0: Toolchain and first sound (offline)
 Goal: make a sound without touching real-time audio yet.
 
-- [ ] `git init`, `cargo new`, understand `Cargo.toml`, `cargo run`, `cargo check`, `cargo clippy`, `cargo fmt`
-- [ ] Rust basics: `let`/`mut`, primitive types (`f32`, `usize`), functions, `for` loops, `Vec`
-- [ ] Generate a 440 Hz sine wave into a `Vec<f32>` (learn: sample rate, phase, amplitude)
-- [ ] Write it to a `.wav` file with the `hound` crate (learn: adding dependencies, `Result`, `?`)
+- [x] `git init`, `cargo new`, understand `Cargo.toml`, `cargo run`, `cargo check`, `cargo clippy`, `cargo fmt`
+- [x] Rust basics: `let`/`mut`, primitive types (`f32`, `usize`), functions, `for` loops, `Vec`
+- [x] Generate a 440 Hz sine wave into a `Vec<f32>` (learn: sample rate, phase, amplitude)
+- [~] Write it to a `.wav` file with the `hound` crate (learn: adding dependencies, `Result`, `?`). Code written; typo `WavWrittter` blocks compilation
 - [ ] Our first unit test: check that the generated buffer has the right length and peak
 
 **Rust concepts:** cargo, variables, mutability, types, functions, loops, `Vec`, crates, basic `Result`.

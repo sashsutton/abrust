@@ -11,14 +11,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 All persistent project context lives in `knowledge/` (index: `knowledge/README.md`).
 
 At the **start of a session**, read:
-1. `knowledge/LOG.md` (last entry): where we left off
-2. `knowledge/PLAN.md`: the current step is the first unchecked box
-3. `knowledge/LEARNER.md`: what the user already knows
+1. `knowledge/NEXT_SESSION.md`: the user's explicit to-do list and recap
+2. `knowledge/LOG.md` (last entry): where we left off
+3. `knowledge/PLAN.md`: the current step is the first unchecked box
+4. `knowledge/LEARNER.md`: what the user already knows
 
 When unsure what to do, or whether to ask, follow `knowledge/WHEN_UNSURE.md`.
 Before re-opening a design question, check `knowledge/DECISIONS.md`.
 
-At the **end of a session** (or after a meaningful step): tick boxes in `PLAN.md`, append to `LOG.md`, update concept progress in `LEARNER.md`, and record any decision in `DECISIONS.md`.
+At the **end of a session** (or after a meaningful step): rewrite `NEXT_SESSION.md` (explicit, step-by-step, written for the user), tick boxes in `PLAN.md`, append to `LOG.md`, update concept progress in `LEARNER.md`, and record any decision in `DECISIONS.md`.
 
 ## How to work with the user
 
