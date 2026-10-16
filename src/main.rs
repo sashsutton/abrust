@@ -33,3 +33,23 @@ fn main() -> Result<(), hound::Error> {
     println!("Wrote sine.wav");
     Ok(())
 }
+
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn sine_has_correct_length() {
+        let samples = generate_sine(440.0, 1.0, 0.5);
+        assert_eq!(samples.len(), 48_000);
+    }
+
+    #[test]
+    fn sine_never_exceeds_amplit
+        let samples = generate_sine(440.0, 1.0, 0.5);
+        let peak = samples.iter(max(s.abs()));
+        assert!(peak <= 0.5);
+        assert!(peak > 0.49);
+    }
+}
