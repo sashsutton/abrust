@@ -13,8 +13,23 @@ fn generate_sine(frequency: f32, seconds: f32, amplitude: f32) -> Vec<f32> {
     samples
 }
 
-fn main() {
+fn main() -> Result<(), hound::Error> {
     let samples = generate_sine(440.0, 2.0, 0.5);
-    println!("Generated {} samples", samples.len());
-    println!("First 5: {:?}", &samples[..5]);
+
+    let spec = hound::WavSpec {
+        channels: 1,
+        sample_rate: SAMPLE_RATE,
+        bits_per_sample: 32,
+        sample_format: hound::SampleFormat::Float,
+    };
+
+    let mut writer = hound::WavWrittter::create("sine.wav", spec)?;
+
+    for s in &samples {
+        writer.write_sample(*s)?;
+    }
+    writer.finalize()?;
+
+    println!("Wrote sine.wav");
+    Ok(())
 }
